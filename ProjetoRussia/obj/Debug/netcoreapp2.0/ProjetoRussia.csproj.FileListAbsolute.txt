@@ -1,0 +1,11 @@
+C:\Projeto\ProjetoRussia\ProjetoRussia\bin\Debug\netcoreapp2.0\ProjetoRussia.deps.json
+C:\Projeto\ProjetoRussia\ProjetoRussia\bin\Debug\netcoreapp2.0\ProjetoRussia.runtimeconfig.json
+C:\Projeto\ProjetoRussia\ProjetoRussia\bin\Debug\netcoreapp2.0\ProjetoRussia.runtimeconfig.dev.json
+C:\Projeto\ProjetoRussia\ProjetoRussia\bin\Debug\netcoreapp2.0\ProjetoRussia.dll
+C:\Projeto\ProjetoRussia\ProjetoRussia\bin\Debug\netcoreapp2.0\ProjetoRussia.pdb
+C:\Projeto\ProjetoRussia\ProjetoRussia\obj\Debug\netcoreapp2.0\ProjetoRussia.csprojResolveAssemblyReference.cache
+C:\Projeto\ProjetoRussia\ProjetoRussia\obj\Debug\netcoreapp2.0\ProjetoRussia.csproj.CoreCompileInputs.cache
+C:\Projeto\ProjetoRussia\ProjetoRussia\obj\Debug\netcoreapp2.0\ProjetoRussia.AssemblyInfoInputs.cache
+C:\Projeto\ProjetoRussia\ProjetoRussia\obj\Debug\netcoreapp2.0\ProjetoRussia.AssemblyInfo.cs
+C:\Projeto\ProjetoRussia\ProjetoRussia\obj\Debug\netcoreapp2.0\ProjetoRussia.dll
+C:\Projeto\ProjetoRussia\ProjetoRussia\obj\Debug\netcoreapp2.0\ProjetoRussia.pdb

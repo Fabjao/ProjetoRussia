@@ -5,7 +5,9 @@ VisualStudioVersion = 15.0.27130.2010
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProjetoRussia", "ProjetoRussia\ProjetoRussia.csproj", "{086E11BB-2C42-4A34-A74B-0A859EA72C09}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjetoRussia.Core", "ProjetoRussia.Core\ProjetoRussia.Core.csproj", "{D32834CA-B9AC-452C-9A6D-B877D83DB063}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProjetoRussia.Core", "ProjetoRussia.Core\ProjetoRussia.Core.csproj", "{D32834CA-B9AC-452C-9A6D-B877D83DB063}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjetoRussia.Api", "ProjetoRussia.Api\ProjetoRussia.Api.csproj", "{EEFE6579-D8F7-4366-AA8C-B0D055F22903}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{D32834CA-B9AC-452C-9A6D-B877D83DB063}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D32834CA-B9AC-452C-9A6D-B877D83DB063}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D32834CA-B9AC-452C-9A6D-B877D83DB063}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EEFE6579-D8F7-4366-AA8C-B0D055F22903}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EEFE6579-D8F7-4366-AA8C-B0D055F22903}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EEFE6579-D8F7-4366-AA8C-B0D055F22903}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EEFE6579-D8F7-4366-AA8C-B0D055F22903}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

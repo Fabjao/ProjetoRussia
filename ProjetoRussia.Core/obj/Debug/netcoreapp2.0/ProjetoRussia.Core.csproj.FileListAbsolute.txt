@@ -4,3 +4,8 @@ C:\Projeto\ProjetoRussia\ProjetoRussia.Core\obj\Debug\netcoreapp2.0\ProjetoRussi
 C:\Projeto\ProjetoRussia\ProjetoRussia.Core\obj\Debug\netcoreapp2.0\ProjetoRussia.Core.csproj.CoreCompileInputs.cache
 C:\Projeto\ProjetoRussia\ProjetoRussia.Core\obj\Debug\netcoreapp2.0\ProjetoRussia.Core.AssemblyInfoInputs.cache
 C:\Projeto\ProjetoRussia\ProjetoRussia.Core\obj\Debug\netcoreapp2.0\ProjetoRussia.Core.AssemblyInfo.cs
+C:\Projeto\ProjetoRussia\ProjetoRussia.Core\bin\Debug\netcoreapp2.0\ProjetoRussia.Core.runtimeconfig.json
+C:\Projeto\ProjetoRussia\ProjetoRussia.Core\bin\Debug\netcoreapp2.0\ProjetoRussia.Core.runtimeconfig.dev.json
+C:\Projeto\ProjetoRussia\ProjetoRussia.Core\bin\Debug\netcoreapp2.0\ProjetoRussia.Core.pdb
+C:\Projeto\ProjetoRussia\ProjetoRussia.Core\obj\Debug\netcoreapp2.0\ProjetoRussia.Core.dll
+C:\Projeto\ProjetoRussia\ProjetoRussia.Core\obj\Debug\netcoreapp2.0\ProjetoRussia.Core.pdb

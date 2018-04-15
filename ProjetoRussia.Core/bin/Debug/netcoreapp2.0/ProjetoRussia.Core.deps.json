@@ -1,14 +1,15 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v2.0",
-    "signature": "018f9fa068c1a60534dd5cdb27f146682399ed79"
+    "signature": "984e008eb2cec8e8ab065f72987c15aee65cc425"
   },
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v2.0": {
       "ProjetoRussia.Core/1.0.0": {
         "dependencies": {
-          "Microsoft.EntityFrameworkCore.SqlServer": "2.1.0-preview2-final"
+          "Microsoft.EntityFrameworkCore.SqlServer": "2.1.0-preview2-final",
+          "Microsoft.EntityFrameworkCore.Tools": "2.1.0-preview2-final"
         },
         "runtime": {
           "ProjetoRussia.Core.dll": {}
@@ -92,6 +93,7 @@
           "lib/netstandard1.3/Microsoft.CodeAnalysis.Workspaces.dll": {}
         }
       },
+      "Microsoft.CSharp/4.5.0-preview2-26406-04": {},
       "Microsoft.EntityFrameworkCore/2.1.0-preview2-final": {
         "dependencies": {
           "Microsoft.EntityFrameworkCore.Abstractions": "2.1.0-preview2-final",
@@ -119,6 +121,15 @@
           "Microsoft.CodeAnalysis.CSharp.Workspaces": "2.6.1"
         }
       },
+      "Microsoft.EntityFrameworkCore.Design/2.1.0-preview2-final": {
+        "dependencies": {
+          "Microsoft.CSharp": "4.5.0-preview2-26406-04",
+          "Microsoft.EntityFrameworkCore.Relational": "2.1.0-preview2-final"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.EntityFrameworkCore.Design.dll": {}
+        }
+      },
       "Microsoft.EntityFrameworkCore.Relational/2.1.0-preview2-final": {
         "dependencies": {
           "Microsoft.EntityFrameworkCore": "2.1.0-preview2-final"
@@ -134,6 +145,11 @@
         },
         "runtime": {
           "lib/netstandard2.0/Microsoft.EntityFrameworkCore.SqlServer.dll": {}
+        }
+      },
+      "Microsoft.EntityFrameworkCore.Tools/2.1.0-preview2-final": {
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore.Design": "2.1.0-preview2-final"
         }
       },
       "Microsoft.Extensions.Caching.Abstractions/2.1.0-preview2-final": {
@@ -1321,6 +1337,13 @@
       "path": "microsoft.codeanalysis.workspaces.common/2.6.1",
       "hashPath": "microsoft.codeanalysis.workspaces.common.2.6.1.nupkg.sha512"
     },
+    "Microsoft.CSharp/4.5.0-preview2-26406-04": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-HqDNj4Ss5dtmJc7MySxTCYUGytJ4DTEEnR6WWcjDJqNF9YzH7kLZbKnA1jEj1cuG994gMP2orTL3UmDQsYtT6g==",
+      "path": "microsoft.csharp/4.5.0-preview2-26406-04",
+      "hashPath": "microsoft.csharp.4.5.0-preview2-26406-04.nupkg.sha512"
+    },
     "Microsoft.EntityFrameworkCore/2.1.0-preview2-final": {
       "type": "package",
       "serviceable": true,
@@ -1342,6 +1365,13 @@
       "path": "microsoft.entityframeworkcore.analyzers/2.1.0-preview2-final",
       "hashPath": "microsoft.entityframeworkcore.analyzers.2.1.0-preview2-final.nupkg.sha512"
     },
+    "Microsoft.EntityFrameworkCore.Design/2.1.0-preview2-final": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-nEtdbs14jatnzfcf79hHjQM0lTuyz7aqzVYl6/nDOxQTMM2dU1P0q6J7mdI0AwCqIibrufkBBqo16yA88RqfKA==",
+      "path": "microsoft.entityframeworkcore.design/2.1.0-preview2-final",
+      "hashPath": "microsoft.entityframeworkcore.design.2.1.0-preview2-final.nupkg.sha512"
+    },
     "Microsoft.EntityFrameworkCore.Relational/2.1.0-preview2-final": {
       "type": "package",
       "serviceable": true,
@@ -1355,6 +1385,13 @@
       "sha512": "sha512-FpwWIA1fY4dVcUJY4dLh6qaqOEC+bm06xLKxd3yI6TQ4IwRRQRlxFV346YvrqWZspwu96+NIpcIc/Ud9LY3u7A==",
       "path": "microsoft.entityframeworkcore.sqlserver/2.1.0-preview2-final",
       "hashPath": "microsoft.entityframeworkcore.sqlserver.2.1.0-preview2-final.nupkg.sha512"
+    },
+    "Microsoft.EntityFrameworkCore.Tools/2.1.0-preview2-final": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-6z42VZW/inLbuBGk4+3yK/6Rv9E0j6hwiZac0/qYNy/t7Xmgz3mMYc3bopTLugecgQLFFvMm22fzkARZoSoqUw==",
+      "path": "microsoft.entityframeworkcore.tools/2.1.0-preview2-final",
+      "hashPath": "microsoft.entityframeworkcore.tools.2.1.0-preview2-final.nupkg.sha512"
     },
     "Microsoft.Extensions.Caching.Abstractions/2.1.0-preview2-final": {
       "type": "package",

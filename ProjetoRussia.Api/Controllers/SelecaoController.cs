@@ -53,9 +53,12 @@ namespace ProjetoRussia.Api.Controllers
         }
 
         // GET: Selecao/Edit/5
-        public ActionResult Edit(int id)
+        [HttpGet("BuscaPorId")]
+        public IActionResult BuscaPorId(int id)
         {
-            return View();
+            Selecao selecao = _copaContext.Selecoes.Where(s => s.SelecaoId == id).FirstOrDefault();
+
+            return Ok(selecao);
         }
 
         // POST: Selecao/Edit/5

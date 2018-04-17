@@ -30,13 +30,25 @@ namespace ProjetoRussia.Api
             var connection = @"Server=(localdb)\mssqllocaldb;Database=ProjetoRussia;Trusted_Connection=True;ConnectRetryCount=0";
             services.AddDbContext<CopaContext>
             (options => options.UseSqlServer(connection));
-            
+
             services.AddMvc();
 
-            services.AddSwaggerGen(c =>
+            services.AddCors(x =>
             {
-                c.SwaggerDoc("v1", new Info { Title = "Projeto Russia", Version = "v1" });
+                x.AddPolicy("Default",
+                builder =>
+                {
+                    builder.AllowAnyOrigin()
+                    .AllowAnyHeader()
+                    .AllowAnyMethod(); ;
+                });
             });
+            
+            services.AddSwaggerGen();
+            //services.AddSwaggerGen(c =>
+            //{
+            //    c.SwaggerDoc("v1", new Info { Title = "Projeto Russia", Version = "v1" });
+            //});
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -46,15 +58,16 @@ namespace ProjetoRussia.Api
             {
                 app.UseDeveloperExceptionPage();
             }
-            app.UseMvc();
+
+          app.UseSwagger();
+          //  app.UseSwaggerUI(c =>
+          //  {
+          //      c.SwaggerEndpoint("/swagger/v1/swagger.json", "My API V1");
+          //  });
+          //
             app.UseStaticFiles();
-            
-            app.UseSwagger();
-            app.UseSwaggerUI(c =>
-            {
-                c.SwaggerEndpoint("/swagger/v1/swagger.json", "My API V1");
-            });
-            
+            app.UseMvc();
+
         }
     }
 }

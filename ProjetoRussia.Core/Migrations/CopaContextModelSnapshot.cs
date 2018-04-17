@@ -51,6 +51,22 @@ namespace ProjetoRussia.Core.Migrations
                     b.ToTable("Selecoes");
                 });
 
+            modelBuilder.Entity("ProjetoRussia.Core.Models.Usuario", b =>
+                {
+                    b.Property<int>("UsuarioId")
+                        .ValueGeneratedOnAdd();
+
+                    b.Property<bool>("IsPesistent");
+
+                    b.Property<string>("Login");
+
+                    b.Property<string>("Senha");
+
+                    b.HasKey("UsuarioId");
+
+                    b.ToTable("Usuarios");
+                });
+
             modelBuilder.Entity("ProjetoRussia.Core.Models.Jogador", b =>
                 {
                     b.HasOne("ProjetoRussia.Core.Models.Selecao")

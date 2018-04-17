@@ -6777,28 +6777,25 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Fabio\\.nuget\\packages\\": {},
+    "C:\\Users\\33531106821\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
-    "restoreSettings": {
-      "hideWarningsAndErrors": true
-    },
     "restore": {
-      "projectUniqueName": "C:\\Projeto\\ProjetoRussia\\ProjetoRussia.Core\\ProjetoRussia.Core.csproj",
+      "projectUniqueName": "C:\\TEMP\\ProjetoRussia\\ProjetoRussia.Core\\ProjetoRussia.Core.csproj",
       "projectName": "ProjetoRussia.Core",
-      "projectPath": "C:\\Projeto\\ProjetoRussia\\ProjetoRussia.Core\\ProjetoRussia.Core.csproj",
-      "packagesPath": "C:\\Users\\Fabio\\.nuget\\packages\\",
-      "outputPath": "C:\\Projeto\\ProjetoRussia\\ProjetoRussia.Core\\obj\\",
+      "projectPath": "C:\\TEMP\\ProjetoRussia\\ProjetoRussia.Core\\ProjetoRussia.Core.csproj",
+      "packagesPath": "C:\\Users\\33531106821\\.nuget\\packages\\",
+      "outputPath": "C:\\TEMP\\ProjetoRussia\\ProjetoRussia.Core\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\",
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\Fabio\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\33531106821\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.Fallback.config"
       ],

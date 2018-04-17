@@ -14,5 +14,6 @@ namespace ProjetoRussia.Core.Models
 
         public DbSet<Selecao> Selecoes { get; set; }
         public DbSet<Jogador> Jogadores { get; set; }
+        public DbSet<Usuario> Usuarios { get; set; }
     }
 }

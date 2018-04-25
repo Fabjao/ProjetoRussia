@@ -19,3 +19,14 @@ C:\TEMP\ProjetoRussia\ProjetoRussia.Core\obj\Debug\netcoreapp2.0\ProjetoRussia.C
 C:\TEMP\ProjetoRussia\ProjetoRussia.Core\obj\Debug\netcoreapp2.0\ProjetoRussia.Core.AssemblyInfo.cs
 C:\TEMP\ProjetoRussia\ProjetoRussia.Core\obj\Debug\netcoreapp2.0\ProjetoRussia.Core.dll
 C:\TEMP\ProjetoRussia\ProjetoRussia.Core\obj\Debug\netcoreapp2.0\ProjetoRussia.Core.pdb
+C:\Users\logonrm\Source\Repos\ProjetoRussia\ProjetoRussia.Core\bin\Debug\netcoreapp2.0\ProjetoRussia.Core.deps.json
+C:\Users\logonrm\Source\Repos\ProjetoRussia\ProjetoRussia.Core\bin\Debug\netcoreapp2.0\ProjetoRussia.Core.runtimeconfig.json
+C:\Users\logonrm\Source\Repos\ProjetoRussia\ProjetoRussia.Core\bin\Debug\netcoreapp2.0\ProjetoRussia.Core.runtimeconfig.dev.json
+C:\Users\logonrm\Source\Repos\ProjetoRussia\ProjetoRussia.Core\bin\Debug\netcoreapp2.0\ProjetoRussia.Core.dll
+C:\Users\logonrm\Source\Repos\ProjetoRussia\ProjetoRussia.Core\bin\Debug\netcoreapp2.0\ProjetoRussia.Core.pdb
+C:\Users\logonrm\Source\Repos\ProjetoRussia\ProjetoRussia.Core\obj\Debug\netcoreapp2.0\ProjetoRussia.Core.csprojResolveAssemblyReference.cache
+C:\Users\logonrm\Source\Repos\ProjetoRussia\ProjetoRussia.Core\obj\Debug\netcoreapp2.0\ProjetoRussia.Core.csproj.CoreCompileInputs.cache
+C:\Users\logonrm\Source\Repos\ProjetoRussia\ProjetoRussia.Core\obj\Debug\netcoreapp2.0\ProjetoRussia.Core.AssemblyInfoInputs.cache
+C:\Users\logonrm\Source\Repos\ProjetoRussia\ProjetoRussia.Core\obj\Debug\netcoreapp2.0\ProjetoRussia.Core.AssemblyInfo.cs
+C:\Users\logonrm\Source\Repos\ProjetoRussia\ProjetoRussia.Core\obj\Debug\netcoreapp2.0\ProjetoRussia.Core.dll
+C:\Users\logonrm\Source\Repos\ProjetoRussia\ProjetoRussia.Core\obj\Debug\netcoreapp2.0\ProjetoRussia.Core.pdb

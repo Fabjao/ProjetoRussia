@@ -22,14 +22,15 @@ namespace ProjetoRussia.Api.Controllers
         [HttpGet]
         public IActionResult Index()
         {
+
             return Ok(_copaContext.Selecoes.ToList());
         }
 
-        // GET: Selecao/Details/5
-        public ActionResult Details(int id)
-        {
-            return View();
-        }
+        // GET: Selecao/Details/5        
+        //public ActionResult Details(int id)
+        //{
+        //    return View();
+        //}
                 
         // POST: Selecao/Create
         [HttpPost]
@@ -63,7 +64,6 @@ namespace ProjetoRussia.Api.Controllers
 
         // POST: Selecao/Edit/5
         [HttpPost]
-        [ValidateAntiForgeryToken]
         public ActionResult Edit(int id, IFormCollection collection)
         {
             try
@@ -79,26 +79,25 @@ namespace ProjetoRussia.Api.Controllers
         }
 
         // GET: Selecao/Delete/5
-        public ActionResult Delete(int id)
-        {
-            return View();
-        }
+        //public ActionResult Delete(int id)
+        //{
+        //    return View();
+        //}
 
         // POST: Selecao/Delete/5
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Delete(int id, IFormCollection collection)
-        {
-            try
-            {
-                // TODO: Add delete logic here
+        //[HttpPost]
+        //public IActionResult Delete(int id)
+        //{
+        //    try
+        //    {
+        //        // TODO: Add delete logic here
 
-                return RedirectToAction(nameof(Index));
-            }
-            catch
-            {
-                return View();
-            }
-        }
+        //        return RedirectToAction(nameof(Index));
+        //    }
+        //    catch
+        //    {
+        //        return View();
+        //    }
+        //}
     }
 }

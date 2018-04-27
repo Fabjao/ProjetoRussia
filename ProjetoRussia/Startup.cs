@@ -23,8 +23,15 @@ namespace ProjetoRussia
         public void ConfigureServices(IServiceCollection services)
         {
             services.Configure<ConfigAPI>(Configuration.GetSection("ConfigAPISection"));
+            services.AddAuthentication("app")
+                .AddCookie("app",
+                o =>
+                {
+                    o.LoginPath = "/account/index";
+                    o.AccessDeniedPath = "/account/denied";
+                });
             services.AddMvc();
-            
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -41,7 +48,7 @@ namespace ProjetoRussia
             }
 
             app.UseStaticFiles();
-
+            app.UseAuthentication();
             app.UseMvc(routes =>
             {
                 routes.MapRoute(

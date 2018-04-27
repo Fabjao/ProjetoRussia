@@ -38,3 +38,16 @@ C:\Users\logonrm\Source\Repos\ProjetoRussia\ProjetoRussia.Api\obj\Debug\netcorea
 C:\Users\logonrm\Source\Repos\ProjetoRussia\ProjetoRussia.Api\obj\Debug\netcoreapp2.0\ProjetoRussia.Api.AssemblyInfo.cs
 C:\Users\logonrm\Source\Repos\ProjetoRussia\ProjetoRussia.Api\obj\Debug\netcoreapp2.0\ProjetoRussia.Api.dll
 C:\Users\logonrm\Source\Repos\ProjetoRussia\ProjetoRussia.Api\obj\Debug\netcoreapp2.0\ProjetoRussia.Api.pdb
+D:\12NEt\ProjetoRussia\ProjetoRussia.Api\bin\Debug\netcoreapp2.0\ProjetoRussia.Api.deps.json
+D:\12NEt\ProjetoRussia\ProjetoRussia.Api\bin\Debug\netcoreapp2.0\ProjetoRussia.Api.runtimeconfig.json
+D:\12NEt\ProjetoRussia\ProjetoRussia.Api\bin\Debug\netcoreapp2.0\ProjetoRussia.Api.runtimeconfig.dev.json
+D:\12NEt\ProjetoRussia\ProjetoRussia.Api\bin\Debug\netcoreapp2.0\ProjetoRussia.Api.dll
+D:\12NEt\ProjetoRussia\ProjetoRussia.Api\bin\Debug\netcoreapp2.0\ProjetoRussia.Api.pdb
+D:\12NEt\ProjetoRussia\ProjetoRussia.Api\bin\Debug\netcoreapp2.0\ProjetoRussia.Core.dll
+D:\12NEt\ProjetoRussia\ProjetoRussia.Api\bin\Debug\netcoreapp2.0\ProjetoRussia.Core.pdb
+D:\12NEt\ProjetoRussia\ProjetoRussia.Api\obj\Debug\netcoreapp2.0\ProjetoRussia.Api.csprojResolveAssemblyReference.cache
+D:\12NEt\ProjetoRussia\ProjetoRussia.Api\obj\Debug\netcoreapp2.0\ProjetoRussia.Api.csproj.CoreCompileInputs.cache
+D:\12NEt\ProjetoRussia\ProjetoRussia.Api\obj\Debug\netcoreapp2.0\ProjetoRussia.Api.AssemblyInfoInputs.cache
+D:\12NEt\ProjetoRussia\ProjetoRussia.Api\obj\Debug\netcoreapp2.0\ProjetoRussia.Api.AssemblyInfo.cs
+D:\12NEt\ProjetoRussia\ProjetoRussia.Api\obj\Debug\netcoreapp2.0\ProjetoRussia.Api.dll
+D:\12NEt\ProjetoRussia\ProjetoRussia.Api\obj\Debug\netcoreapp2.0\ProjetoRussia.Api.pdb

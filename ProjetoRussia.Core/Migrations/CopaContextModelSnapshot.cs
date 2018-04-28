@@ -28,7 +28,7 @@ namespace ProjetoRussia.Core.Migrations
 
                     b.Property<string>("Nome");
 
-                    b.Property<int?>("SelecaoId");
+                    b.Property<int>("SelecaoId");
 
                     b.Property<string>("Time");
 
@@ -71,7 +71,8 @@ namespace ProjetoRussia.Core.Migrations
                 {
                     b.HasOne("ProjetoRussia.Core.Models.Selecao")
                         .WithMany("Jogadores")
-                        .HasForeignKey("SelecaoId");
+                        .HasForeignKey("SelecaoId")
+                        .OnDelete(DeleteBehavior.Cascade);
                 });
 #pragma warning restore 612, 618
         }

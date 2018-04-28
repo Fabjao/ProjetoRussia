@@ -6,5 +6,6 @@
         public string Nome { get; set; }
         public int Idade { get; set; }
         public string Time { get; set; }
+        public int SelecaoId { get; set; }
     }
 }

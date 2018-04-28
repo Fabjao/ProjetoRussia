@@ -20,6 +20,7 @@ namespace ProjetoRussia.Api.Controllers
         }
         // GET: Selecao
         [HttpGet]
+        [Route("Lista")]
         public IActionResult Index()
         {
 
@@ -31,7 +32,7 @@ namespace ProjetoRussia.Api.Controllers
         //{
         //    return View();
         //}
-                
+
         // POST: Selecao/Create
         [HttpPost]
         [Route("Inserir")]
@@ -40,16 +41,34 @@ namespace ProjetoRussia.Api.Controllers
             try
             {
                 // TODO: Add insert logic here
-                _copaContext.Selecoes.Add(new Selecao() {
+                _copaContext.Selecoes.Add(new Selecao()
+                {
                     Nome = selecao.Nome
                 });
                 _copaContext.SaveChanges();
 
-                return RedirectToAction(nameof(Index));
+                return Ok();
             }
             catch
             {
-                return View();
+                return NotFound("Falha ao gravar a seleção.");
+            }
+        }
+
+        [HttpPost]
+        [Route("Alterar")]
+        public IActionResult Alterar([FromBody]Selecao selecao)
+        {
+            try
+            {
+                _copaContext.Selecoes.Update(selecao);
+                _copaContext.SaveChanges();
+
+                return Ok();
+            }
+            catch
+            {
+                return NotFound("Falha ao gravar a seleção.");
             }
         }
 
@@ -58,9 +77,34 @@ namespace ProjetoRussia.Api.Controllers
         public IActionResult BuscaPorId(int id)
         {
             Selecao selecao = _copaContext.Selecoes.Where(s => s.SelecaoId == id).FirstOrDefault();
+            selecao.Jogadores = _copaContext.Jogadores.Where(x => x.SelecaoId == id).ToList();
 
             return Ok(selecao);
         }
+
+        [HttpGet("ExcluirJogador")]
+        public IActionResult ExcluirJogador(int id)
+        {
+            Jogador jogador = _copaContext.Jogadores.Where(s => s.JogadorId == id).FirstOrDefault();
+            _copaContext.Jogadores.Remove(jogador);
+            _copaContext.SaveChanges();
+            return Ok();
+        }
+
+        [HttpGet("Deletar")]
+        public IActionResult Deletar(int id)
+        {
+            var jogadores = _copaContext.Jogadores.Where(x => x.SelecaoId == id);
+            _copaContext.Jogadores.RemoveRange(jogadores);
+
+            var selecao = _copaContext.Selecoes.Where(x => x.SelecaoId == id).FirstOrDefault();
+            _copaContext.Selecoes.Remove(selecao);
+            _copaContext.SaveChanges();
+
+            return Ok(selecao);
+        }
+
+
 
         // POST: Selecao/Edit/5
         [HttpPost]
@@ -78,26 +122,23 @@ namespace ProjetoRussia.Api.Controllers
             }
         }
 
-        // GET: Selecao/Delete/5
-        //public ActionResult Delete(int id)
-        //{
-        //    return View();
-        //}
 
-        // POST: Selecao/Delete/5
-        //[HttpPost]
-        //public IActionResult Delete(int id)
-        //{
-        //    try
-        //    {
-        //        // TODO: Add delete logic here
+        [HttpPost]
+        [Route("InserirJogador")]
+        public IActionResult InserirJogador([FromBody]Jogador jogador)
+        {
+            try
+            {
+                // TODO: Add insert logic here
+                _copaContext.Jogadores.Add(jogador);
+                _copaContext.SaveChanges();
 
-        //        return RedirectToAction(nameof(Index));
-        //    }
-        //    catch
-        //    {
-        //        return View();
-        //    }
-        //}
+                return Ok();
+            }
+            catch
+            {
+                return NotFound("Falha ao gravar o jogador.");
+            }
+        }
     }
 }

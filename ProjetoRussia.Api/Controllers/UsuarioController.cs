@@ -33,5 +33,17 @@ namespace ProjetoRussia.Api.Controllers
                 throw ex;
             }
         }
+
+        [HttpPost]
+        [Route("ValidaLogin")]
+        public IActionResult ValidaLogin([FromBody] Usuario usuario)
+        {
+            var login = _copaContext.Usuarios.Where(us => us.Login == usuario.Login && us.Senha == usuario.Senha).FirstOrDefault();
+            if (login != null)
+                return Ok(true);
+
+            return NotFound();
+        }
+
     }
 }

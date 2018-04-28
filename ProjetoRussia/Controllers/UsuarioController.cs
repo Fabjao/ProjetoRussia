@@ -12,6 +12,7 @@ using ProjetoRussia.Core.Models;
 
 namespace ProjetoRussia.Controllers
 {
+    [Route("[controller]/[action]")]
     public class UsuarioController : Controller
     {
         private IOptions<ConfigAPI> _options;
@@ -24,10 +25,7 @@ namespace ProjetoRussia.Controllers
             _client.BaseAddress = new Uri(_options.Value.URL);
             _client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
         }
-        public IActionResult Index()
-        {
-            return View();
-        }
+        
         [HttpGet]
         public IActionResult Cadastrar()
         {
@@ -35,22 +33,13 @@ namespace ProjetoRussia.Controllers
         }
 
         [HttpPost]
-        public IActionResult Cadastrar([FromBody] Usuario usuario)
+        public IActionResult Cadastrar(Usuario usuario)
         {
-            string rota = string.Format("Inserir");
+            string rota = string.Format("Usuario/Inserir");
             var response = _client.PostAsJsonAsync(rota, usuario);
 
             return RedirectToAction("Index", "Account");
         }
-
-
-        public IActionResult Validar(string login, string senha)
-        {
-            if (login.Equals("1") & senha.Equals("1"))
-            {
-                return RedirectToAction("Index", "Selecao");
-            }
-            return RedirectToAction("Index");
-        }
+                
     }
 }

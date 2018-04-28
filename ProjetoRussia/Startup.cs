@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.ResponseCompression;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using ProjetoRussia.Config;
@@ -23,8 +24,13 @@ namespace ProjetoRussia
         public void ConfigureServices(IServiceCollection services)
         {
             services.Configure<ConfigAPI>(Configuration.GetSection("ConfigAPISection"));
-            services.AddAuthentication("app")
-                .AddCookie("app",
+            services.AddResponseCompression(o =>
+            {
+                o.Providers.Add<GzipCompressionProvider>();
+            });
+
+            services.AddAuthentication("appRussia")
+                .AddCookie("appRussia",
                 o =>
                 {
                     o.LoginPath = "/account/index";
@@ -47,6 +53,7 @@ namespace ProjetoRussia
                 app.UseExceptionHandler("/Home/Error");
             }
 
+            app.UseResponseCompression();
             app.UseStaticFiles();
             app.UseAuthentication();
             app.UseMvc(routes =>

@@ -27,7 +27,7 @@ namespace ProjetoRussia.Api
         public void ConfigureServices(IServiceCollection services)
         {
 
-            var connection = @"Server=(localdb)\mssqllocaldb;Database=ProjetoRussia;Trusted_Connection=True;ConnectRetryCount=0";
+            var connection = @"Server=(localdb)\mssqllocaldb;Database=ProjetoRussia1;Trusted_Connection=True;ConnectRetryCount=0";
             services.AddDbContext<CopaContext>
             (options => options.UseSqlServer(connection));
 
